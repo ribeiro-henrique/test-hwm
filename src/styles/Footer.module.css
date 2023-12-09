@@ -1,0 +1,50 @@
+.main {
+  height: 60px;
+  width: 414px;
+  flex-shrink: 0;
+  background: #1E1E1E;
+  display: flex;
+  align-items: space-between;
+  justify-content: space-between;
+}
+
+.nameRole {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 10px;
+}
+
+.name {
+  color: #D9D9D9;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.role {
+  color: #D9D9D9;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  margin-right: 10px;
+  flex-direction: column;
+  color: #979494;
+  text-align: right;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.terms {
+  display: flex;
+  text-decoration: underline;
+}
