@@ -1,6 +1,7 @@
 .main {
   background-color: #1E1E1E;
   height: 67px;
+  width: 414px;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
