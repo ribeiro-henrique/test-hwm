@@ -10,6 +10,18 @@
   gap: 10px;
 }
 
+.mainChatbot {
+  width: 357px;
+  height: 189px;
+  border-radius: 9px;
+  background: linear-gradient(118deg, #A0348F 1.37%, rgba(255, 0, 168, 0.90) 50.68%, #F376DF 100%);
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 10px;
+}
+
 .icon {
   display: flex;
   justify-content: center;
@@ -42,12 +54,18 @@
   margin-top: 90px;
 }
 
+.btnBot {
+  margin-left: 230px;
+  margin-top: 18px;
+}
+
 .button {
   border-radius: 50px;
   width: 120px;
   height: 30px;
   background: #FFFFFF;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  border: none;
 }
 
 .button span {

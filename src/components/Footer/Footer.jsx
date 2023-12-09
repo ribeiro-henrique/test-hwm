@@ -8,7 +8,7 @@ export default function Footer() {
         <span className={styles.role}>MEDICINA</span>
       </div>
       <div className={styles.content}>
-        <span>&copy; Copyright 2023 HWM</span>
+        <p>&copy; Copyright 2023 HWM</p>
         <div className={styles.terms}>
           <span>Políticas de Privacidade</span>•<span>Termos de uso</span>
         </div>
