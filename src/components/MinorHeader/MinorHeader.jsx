@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import styles from "./styles/index.module.css";
 
-export default function NavQuestion() {
+export default function MinorHeader({icon, alt, text}) {
   return (
     <div className={styles.main}>
       <Link href="/">
@@ -11,8 +11,8 @@ export default function NavQuestion() {
         </button>
       </Link>
       <div className={styles.info}>
-        <Image src="/images/icon.svg" width={50} height={50} alt="question-icon" />
-        <h1>Questões</h1>
+        <Image src={icon} width={50} height={50} alt={alt} />
+        <h1>{text}</h1>
       </div>
     </div>
   )

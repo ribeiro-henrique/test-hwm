@@ -2,10 +2,11 @@ import React, { useEffect, useState } from 'react';
 import styles from './styles/index.module.css';
 import { fetchApi } from '../../../services/fetchQuestions';
 import AnswerCard from '../AnswerCard/AnswerCard';
-import Options from '../Options/Options';
+import ChangeQuestion from '../ChangeQuestion/ChangeQuestion';
 
 export default function QuestionCard() {
   const [question, setQuestion] = useState(null);
+  const [fullObj, setFullObj] = useState(null);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -13,6 +14,7 @@ export default function QuestionCard() {
         const data = await fetchApi();
         if (data && data.length > 0) {
           setQuestion(data[0]);
+          setFullObj(data);
         }
       } catch (error) {
         console.log(error);
@@ -22,7 +24,9 @@ export default function QuestionCard() {
     fetchData();
   }, []);
 
-  console.log(question);
+  const handleChangeQuestion = (index) => {
+    setQuestion(fullObj[index]);
+  };
 
   const indexToLetter = (index) => String.fromCharCode(65 + index);
 
@@ -41,6 +45,15 @@ export default function QuestionCard() {
       <button className={styles.btn}>
         <span>Confirmar resposta</span>
       </button>
+      <div className={styles.opt}>
+        {fullObj?.map((item, index) => (
+          <ChangeQuestion
+            key={item.id_questao} 
+            text={item.id_questao}
+            onClick={() => handleChangeQuestion(index)}
+          />
+        ))}
+      </div>
     </main>
   );
 }

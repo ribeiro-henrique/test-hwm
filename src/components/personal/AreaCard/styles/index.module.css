@@ -1,0 +1,28 @@
+.main {
+  width: 374px;
+  height: 272px;
+  border-radius: 9px;
+  background: #D9D9D9;
+  margin-top: 20px;
+}
+
+.title {
+  margin-left: 18px;
+  padding-top: 5px;
+  width: 300px;
+  height: 30px;
+  color: #000;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 20px;
+}
+
+.areas {
+  width: 339px;
+  height: 38px;
+  border-radius: 6px;
+  border: 1px solid #000;
+  background: #D9D9D9;
+}
