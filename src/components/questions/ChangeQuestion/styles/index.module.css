@@ -1,0 +1,10 @@
+.main {
+  display: inline-block;
+}
+
+.btn {
+  border-radius: 3px;
+  height: 38px;
+  width: 38px;
+  border: 1px solid #25CB35;
+}
