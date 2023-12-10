@@ -5,5 +5,7 @@
 
 body {
   font-family: helvetica, arial, sans-serif;
-  max-width: 414px;
+  width: 100vw;
+  height: 100vh;
+  background: #1E1E1E;
 }
