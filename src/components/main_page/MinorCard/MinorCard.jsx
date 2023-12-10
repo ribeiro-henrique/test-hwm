@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import styles from "./styles/MinorCard.module.css";
+import styles from "./styles/index.module.css";
 
 export default function MinorCard({ iconSrc, title, buttonText, buttonLink }) {
   return (

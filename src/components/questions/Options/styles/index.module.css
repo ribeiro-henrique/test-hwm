@@ -1,0 +1,52 @@
+.general {
+  display: flex;
+  flex-direction: column;
+  margin-right: 1px;
+}
+
+.main {
+  display: flex;
+  gap: 15px;
+  align-items: flex-end;
+  justify-content: flex-end;
+  margin-right: 1px;
+}
+
+.main:hover {
+  cursor: pointer;
+}
+
+.modal {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  gap: 30px;
+  border-radius: 0.5em;
+  width: 100%;
+  border: 2px solid #1E1E1E;
+}
+
+.rotated {
+  transform: rotate(45deg); 
+  transition: transform 0.2s ease; 
+}
+
+.details {
+  display: flex;
+  visibility: hidden;
+  font-size: 12px;
+  gap: 15px;
+  color: #fff;
+}
+
+.visible {
+  visibility: visible;
+  margin-top: 20px;
+}
+
+
+.details span {
+  border: 2px solid #1E1E1E;
+  border-radius: 0.5em;
+  background-color: #1E1E1E
+}
