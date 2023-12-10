@@ -1,4 +1,4 @@
-import styles from "./styles/Navbar.module.css";
+import styles from "./styles/index.module.css";
 import Image from "next/image";
 
 export default function Navbar() {

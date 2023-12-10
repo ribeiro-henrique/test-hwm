@@ -38,7 +38,9 @@ export default function QuestionCard() {
           text={alternative.alternativa}
         />
       ))}
-
+      <button className={styles.btn}>
+        <span>Confirmar resposta</span>
+      </button>
     </main>
   );
 }

@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import styles from "./styles/MajorCard.module.css";
+import styles from "./styles/index.module.css";
 
 export default function MajorCard({ iconSrc, title, info, buttonText, buttonLink }) {
 
