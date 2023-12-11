@@ -24,7 +24,7 @@ export default function Home() {
         iconSrc="/images/metricas.svg"
         title="MÉTRICAS"
         buttonText="Acessar"
-        buttonLink="/metricas"
+        buttonLink="/"
       />
 
       <GradiantCard
@@ -32,7 +32,7 @@ export default function Home() {
         title="CHATBOT"
         info="Treine através de trívias geradas pelo nosso chatbot do Telegram."
         buttonText="Começar"
-        buttonLink="/chatbot"
+        buttonLink="/"
       />
       
     </div>
