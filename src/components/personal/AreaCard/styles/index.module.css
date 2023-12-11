@@ -1,10 +1,12 @@
 .main {
   display: flex;
   flex-direction: column;
+  height: 360px;
   gap: 0.5em;
   width: 374px;
   border-radius: 9px;
   background: #D9D9D9;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.6);
 }
 
 .title {
@@ -19,26 +21,3 @@
   line-height: normal;
   margin-bottom: 10px;
 }
-
-.areas {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 339px;
-  height: 38px;
-  border-radius: 6px;
-  border: 1px solid #000;
-  background: #D9D9D9;
-  padding: 0.5em;
-}
-
-.span {
-  margin-left: 18px;
-  width: 300px;
-  color: #000;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-}
-

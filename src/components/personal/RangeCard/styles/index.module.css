@@ -3,9 +3,11 @@
   flex-direction: column;
   justify-content: space-evenly;
   width: 370px;
-  height: 106px;
+  height: 120px;
   border-radius: 9px;
   background: #D9D9D9;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.6);
+
 }
 
 .title {

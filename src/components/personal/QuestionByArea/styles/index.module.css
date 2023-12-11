@@ -1,0 +1,20 @@
+.areas {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 339px;
+  height: 30px;
+  border-radius: 15px;
+  border: 2px solid #000;
+  background: #D9D9D9;
+  padding: 0.5em;
+}
+
+.span {
+  width: 300px;
+  color: #000;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
