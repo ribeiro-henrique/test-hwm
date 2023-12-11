@@ -1,7 +1,7 @@
 .switch {
   position: relative;
   display: inline-block;
-  width: 60px;
+  width: 66px;
   height: 34px;
 }
 
@@ -18,8 +18,9 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #ccc;
+  background-color: #8B8B8B;
   transition: .4s;
+  border: 2px solid black;
 }
 
 .slider:before {

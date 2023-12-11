@@ -1,9 +1,7 @@
 import { useState } from 'react';
 import styles from './styles/index.module.css';
 
-const options = ["TODOS", "ABC", "AMRIGS", "EMARE", "SUS-SP", "UNICAMP", "USP", "UNISESP", "UFS", "UFRJ", "SANTA CASA DE SÃO PAULO"];
-
-export default function ModalCard({title, example, placeholder}) {
+export default function ModalCard({title, example, placeholder, options}) {
   const [showSpecifyTask, setshowSpecifyTask] = useState(false);
   const [selecteds, setSelecteds] = useState([]);
 
