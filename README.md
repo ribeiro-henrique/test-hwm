@@ -1,5 +1,11 @@
 # Hardwork Medicina Teste Prático
 
+## Deploy
+
+O projeto também está disponível no Vercel. Você pode acessá-lo [aqui](https://test-hwm.vercel.app/).
+
+##
+
 Este projeto foi desenvolvido como parte de um teste prático para a Hardwork Medicina. Utilizei Next.js como framework principal, consumindo uma API externa para renderização das questões. A estrutura do projeto segue uma arquitetura de pastas organizada, e os elementos da aplicação foram modularizados através de componentes.
 
 ## Como Rodar o Projeto
@@ -24,9 +30,6 @@ Este projeto foi desenvolvido como parte de um teste prático para a Hardwork Me
 
 A aplicação estará disponível em [http://localhost:3000](http://localhost:3000).
 
-## Deploy
-
-O projeto também está disponível no Vercel. Você pode acessá-lo [aqui](https://test-hwm.vercel.app/).
 
 ## Designer no Figma
 
