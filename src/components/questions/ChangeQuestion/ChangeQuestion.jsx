@@ -1,10 +1,10 @@
 import styles from './styles/index.module.css';
 
-export default function ChangeQuestion({text}) {
+export default function ChangeQuestion({text, onClick}) {
   
   return (
     <div className={styles.main}>
-      <button className={styles.btn}>
+      <button onClick={onClick} className={styles.btn}>
         <span>
           {text}
         </span>

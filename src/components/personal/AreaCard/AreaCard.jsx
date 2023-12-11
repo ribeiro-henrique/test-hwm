@@ -1,30 +1,27 @@
 import styles from './styles/index.module.css';
-export default function AreaCard({title, area1, area2, area3, area4, area5}) {
+import { ToggleBtn } from '../../ToggleBtn/ToggleBtn';
+export default function AreaCard({title, areas}) {
+  console.log(areas);
   return (
     <main className={styles.main}>
       <p className={styles.title}>
         {title}
       </p>
-      <div className={styles.areas}>
-        <span>{area1}</span>
-        <input type="checkbox"/>
-      </div>
-      <div className={styles.areas}>
-        <span>{area2}</span>
-        <input type="checkbox"/>
-      </div>
-      <div className={styles.areas}> 
-        <span>{area3}</span>
-        <input type="checkbox"/>
-      </div>
-      <div className={styles.areas}>
-        <span>{area4}</span>
-        <input type="checkbox"/>
-      </div>
-      <div className={styles.areas}>
-        <span>{area5}</span>
-        <input type="checkbox"/>
-      </div>
+      {
+        areas.map((area, index) => (
+          <QuestionByArea
+            key={index}
+            description={area}
+          />
+        ))
+      }
     </main>
   )
 }
+
+const QuestionByArea = ({description}) => (
+  <div className={styles.areas}>
+    <span className={styles.span}>{description}</span>
+    <ToggleBtn/>
+  </div>
+)

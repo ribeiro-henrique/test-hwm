@@ -1,33 +1,21 @@
 .main {
   width: 357px;
-  height: 264px;
+  padding: 0.8rem 0.8rem 5rem;
   border-radius: 9px;
-  background: linear-gradient(118deg, #A0348F 1.37%, rgba(255, 0, 168, 0.90) 50.68%, #F376DF 100%);
+  background: linear-gradient(118deg, #AF5CC3 1.37%, #D42A8B, #F62E7D 100%);
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
   flex-direction: column;
-  gap: 10px;
-}
-
-.mainChatbot {
-  width: 357px;
-  height: 189px;
-  border-radius: 9px;
-  background: linear-gradient(118deg, #A0348F 1.37%, rgba(255, 0, 168, 0.90) 50.68%, #F376DF 100%);
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-  flex-direction: column;
-  gap: 10px;
+  position: relative;
 }
 
 .icon {
   display: flex;
-  justify-content: center;
   align-items: center;
   margin-left: 10px;
   margin-top: 10px;
+  gap: 0.5em;
 }
 
 .title {
@@ -35,36 +23,32 @@
   text-align: center;
   font-size: 24px;
   font-style: normal;
-  font-weight: 700;
+  font-weight: bold;
   line-height: normal;
 }
 
 .info {
   color: #FFF;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 1);
+  padding: 1rem 1rem 2rem;
+  text-shadow: 0px 2px 2px rgba(0, 0, 0, 1);
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  margin-left: 40px;
 }
 
 .buttonContainer {
-  margin-left: 230px;
-  margin-top: 90px;
-}
-
-.btnBot {
-  margin-left: 230px;
-  margin-top: 18px;
+  position: absolute;
+  right: 8px;
+  bottom: 10px;
 }
 
 .button {
   border-radius: 50px;
-  width: 120px;
+  width: 150px;
   height: 30px;
   background: #FFFFFF;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.6);
   border: none;
 }
 

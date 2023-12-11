@@ -4,6 +4,7 @@ import AreaCard from '../components/personal/AreaCard/AreaCard';
 import ModalCard from '../components/personal/ModalCard/ModalCard';
 import styles from '../styles/index.module.css';
 
+const areas = ["Cirurgia Geral", "Pediatria", "Ginecologia e obstetrência", "Medicina Preventiva", "Clínica Médica"];
 const CustomSlider = () => {
     
     return (
@@ -15,27 +16,23 @@ const CustomSlider = () => {
             text='Personalização'
           />
         </div>
-        <RangeCard
-          title='Definir meta diária de questões'
-        />
-        <AreaCard
-          title='Questões por Grandes áreas'
-          area1='Cirurgia Geral'
-          area2='Pediatria'
-          area3='Ginecologia e obstetrência'
-          area4='Medicina Preventiva'
-          area5='Clínica Médica'
-        />
-        <ModalCard
-          title='Questões de provas específicas'
-          example='Busque Provas'
-          placeholder='Exemplo: USP, SUS-SP, SURCE...'
-        />
-        <ModalCard
-          title='Questões de temas específicos'
-          example='Busque Temas'
-          placeholder='Asma, Tuberculose, Pneumonia...'
-        />
+          <RangeCard
+            title='Definir meta diária de questões'
+          />
+          <AreaCard
+            title='Questões por Grandes áreas'
+            areas={areas}
+          />
+          <ModalCard
+            title='Questões de provas específicas'
+            example='Busque Provas'
+            placeholder='Exemplo: USP, SUS-SP, SURCE...'
+          />
+          <ModalCard
+            title='Questões de temas específicos'
+            example='Busque Temas'
+            placeholder='Asma, Tuberculose, Pneumonia...'
+          />
         <button>
           <span>
             Começar

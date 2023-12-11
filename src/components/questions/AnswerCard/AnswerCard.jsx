@@ -1,13 +1,7 @@
-import { useState } from 'react';
 import styles from './styles/index.module.css';
 
-export default function AnswerCard({ alternative, text }) {
+export default function AnswerCard({ alternative, text, selected, handleClick }) {
 
-  const [selected, setSelected] = useState(false);
-
-  const handleClick = () => {
-    setSelected(!selected);
-  }
 
   return (
     <button
