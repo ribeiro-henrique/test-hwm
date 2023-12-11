@@ -1,10 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&family=Open+Sans:wght@500&family=Playfair+Display&family=Poppins:wght@400;500;600;700&family=Ramabhadra&family=Roboto:wght@300&display=swap');
+
 * {
   padding: 0;
   margin: 0 auto;
 }
 
 body {
-  font-family: helvetica, arial, sans-serif;
+  font-family: Poppins, arial, sans-serif;
   width: 414px;
   height: 100vh;
   background: #1E1E1E;

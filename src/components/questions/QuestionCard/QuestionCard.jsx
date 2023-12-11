@@ -7,6 +7,7 @@ import ChangeQuestion from '../ChangeQuestion/ChangeQuestion';
 export default function QuestionCard() {
   const [question, setQuestion] = useState(null);
   const [fullObj, setFullObj] = useState(null);
+  const [selectedObj, setSelectedObj] = useState(null);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -28,6 +29,10 @@ export default function QuestionCard() {
     setQuestion(fullObj[index]);
   };
 
+  const handleSelectedAnswer = (id) => {
+    setSelectedObj(id);
+  }
+
   const indexToLetter = (index) => String.fromCharCode(65 + index);
 
   return (
@@ -37,7 +42,9 @@ export default function QuestionCard() {
       </div>
       {question?.alternativas.map((alternative, index) => (
         <AnswerCard
-          key={alternative.id} 
+          key={alternative.id}
+          selected={selectedObj === alternative.id}
+          handleClick={() => handleSelectedAnswer(alternative.id)}
           alternative={indexToLetter(index)}
           text={alternative.alternativa}
         />

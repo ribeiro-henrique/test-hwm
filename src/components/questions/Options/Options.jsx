@@ -18,7 +18,7 @@ export default function Options() {
     <div className={styles.general}>
       <div className={styles.main}>
         <div className={styles.modal}>
-          {isModalOpen ? (
+          {!isModalOpen ? (
             <Image
               src='/images/icon-cog.svg'
               width={28}
